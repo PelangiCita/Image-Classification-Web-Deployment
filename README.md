@@ -2,7 +2,7 @@
 Modul 6 Machine Learning
 
 
-### FLask:
+### Flask:
 Flask adalah kerangka kerja (framework) web mikro yang ditulis dalam bahasa pemrograman Python yang dirancang untuk 
 menjadi ringan dan sederhana, dengan fokus pada kemudahan penggunaan dan fleksibilitas.
 
