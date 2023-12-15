@@ -1,6 +1,12 @@
 # Image-Classification-Web-Deployment
 Modul 6 Machine Learning
 
+# Dataset
+Dataset yang digunakan dapat diakses melalui link https://drive.google.com/file/d/1X9jFokn9AXMMVTmlBQ7XZpBsLKVFnp-d/view?usp=drive_link 
+
+![download (2)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/c10cad5a-49dd-43a8-b421-b18656e60dff)
+
+Dataset telah melalui proses pre-processing, seperti augmentasi sebelum dilakukan fit model.
 
 # Flask:
 Flask adalah kerangka kerja (framework) web mikro yang ditulis dalam bahasa pemrograman Python yang dirancang untuk 
@@ -11,6 +17,10 @@ EfficientNet adalah arsitektur klasifikasi gambar yang terkenal karena memanfaat
 dan resolusi model secara seragam. Kelebihan utamanya terletak pada efisiensinya dalam mencapai akurasi tinggi dengan 
 menggunakan jumlah parameter yang relatif lebih sedikit dibandingkan dengan model-model sebelumnya. Ini membuatnya sangat 
 cocok untuk aplikasi dengan batasan sumber daya komputasional, seperti perangkat bergerak atau lingkungan perangkat terkait.
+Classification report yang dihasilkan oleh EfficientNet untuk dataset ini.
+
+
+
 
 # MobileNet:
 MobileNet, di sisi lain, dirancang khusus untuk aplikasi pada perangkat seluler dan perangkat terkait. Kelebihan utama MobileNet 
@@ -18,13 +28,10 @@ adalah arsitekturnya yang ringan dan dapat diimplementasikan dengan cepat pada p
 menggunakan operasi konvolusi depthwise separable, MobileNet dapat memberikan keseimbangan yang baik antara akurasi klasifikasi
 dan kebutuhan komputasi yang rendah. Hal ini membuatnya sangat cocok untuk aplikasi real-time atau perangkat dengan keterbatasan 
 daya baterai.
+Classification report yang dihasilkan oleh EfficientNet untuk dataset ini.
 
-# Dataset
-Dataset yang digunakan dapat diakses melalui link https://drive.google.com/file/d/1X9jFokn9AXMMVTmlBQ7XZpBsLKVFnp-d/view?usp=drive_link 
+![Screenshot (682)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/2694ce3a-b3c4-4db7-bfaf-939c02b1e51b)
 
-![download (2)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/c10cad5a-49dd-43a8-b421-b18656e60dff)
-
-Dataset telah melalui proses pre-processing, seperti augmentasi sebelum dilakukan fit model.
 
 # Web Deployment
 Dalam tugas ini, web memanfaatkan Flask untuk menyajikan halaman web, menerima unggahan gambar, dan menggunakan model klasifikasi 
