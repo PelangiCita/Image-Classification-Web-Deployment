@@ -1,6 +1,11 @@
 # Image-Classification-Web-Deployment
 Modul 6 Machine Learning
 
+Nama : Pelangi Cita Indah
+NIM  : 202010370311430
+Machine Learning C
+
+
 # Dataset
 Dataset yang digunakan dapat diakses melalui link https://drive.google.com/file/d/1X9jFokn9AXMMVTmlBQ7XZpBsLKVFnp-d/view?usp=drive_link 
 
