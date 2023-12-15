@@ -19,6 +19,7 @@ menggunakan jumlah parameter yang relatif lebih sedikit dibandingkan dengan mode
 cocok untuk aplikasi dengan batasan sumber daya komputasional, seperti perangkat bergerak atau lingkungan perangkat terkait.
 Classification report yang dihasilkan oleh EfficientNet untuk dataset ini.
 
+![Screenshot (680)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/af189ab8-4213-4e28-b518-9363ac3ab719)
 
 
 
