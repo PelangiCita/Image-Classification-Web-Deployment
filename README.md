@@ -31,7 +31,8 @@ dan kebutuhan komputasi yang rendah. Hal ini membuatnya sangat cocok untuk aplik
 daya baterai.
 Classification report yang dihasilkan oleh EfficientNet untuk dataset ini.
 
-![Screenshot (682)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/2694ce3a-b3c4-4db7-bfaf-939c02b1e51b)
+![Screenshot (683)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/91d6ec43-467f-4f6e-81c8-b611884c39c3)
+
 
 
 # Web Deployment
