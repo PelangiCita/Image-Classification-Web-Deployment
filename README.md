@@ -2,11 +2,7 @@
 Modul 6 Machine Learning
 
 
-Nama : Pelangi Cita Indah
-
-NIM  : 202010370311430
-
-Machine Learning C
+Pelangi Cita Indah - 202010370311430 - Machine Learning C
 
 
 # Dataset
