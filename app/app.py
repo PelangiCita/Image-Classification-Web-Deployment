@@ -28,8 +28,8 @@ def index():
 @app.route('/predict', methods=['POST'])
 def predict():
     chosen_model = request.form['select_model']
-    model_dict = {'EfficientNet'   :   'static/MLModule/modul6_EfficientNet.h5',
-                  'MobileNet'     :    'static/MLModule/modul6_MobileNet.h5',}
+    model_dict = {'ResNet'        :    'static/MLModule/ResNet.h5',
+                  'MobileNet'     :    'static/MLModule/MobileNet.h5',}
     if chosen_model in model_dict:
         model = load_model(model_dict[chosen_model])
     else:
