@@ -1,5 +1,5 @@
 # Image-Classification-Web-Deployment
-Modul 6 Machine Learning
+Machine Learning
 
 
 Pelangi Cita Indah - 202010370311430 - Machine Learning C
@@ -16,16 +16,10 @@ Dataset telah melalui proses pre-processing, seperti augmentasi sebelum dilakuka
 Flask adalah kerangka kerja (framework) web mikro yang ditulis dalam bahasa pemrograman Python yang dirancang untuk 
 menjadi ringan dan sederhana, dengan fokus pada kemudahan penggunaan dan fleksibilitas.
 
-# EfficientNet:
-EfficientNet adalah arsitektur klasifikasi gambar yang terkenal karena memanfaatkan strategi peningkatan skala, ketebalan, 
-dan resolusi model secara seragam. Kelebihan utamanya terletak pada efisiensinya dalam mencapai akurasi tinggi dengan 
-menggunakan jumlah parameter yang relatif lebih sedikit dibandingkan dengan model-model sebelumnya. Ini membuatnya sangat 
-cocok untuk aplikasi dengan batasan sumber daya komputasional, seperti perangkat bergerak atau lingkungan perangkat terkait.
-Classification report yang dihasilkan oleh EfficientNet untuk dataset ini.
-
-![Screenshot (680)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/af189ab8-4213-4e28-b518-9363ac3ab719)
-
-
+# ResNet:
+ResNet, singkatan dari Residual Networks, adalah arsitektur jaringan saraf konvolusional (CNN) yang diperkenalkan pada 2015. 
+Dengan memanfaatkan blok residu, ResNet dapat melibatkan model yang sangat dalam tanpa mengalami masalah kinerja. Pendekatan 
+ini telah meningkatkan akurasi dalam tugas-tugas visi komputer seperti klasifikasi gambar dan deteksi objek.
 
 # MobileNet:
 MobileNet, di sisi lain, dirancang khusus untuk aplikasi pada perangkat seluler dan perangkat terkait. Kelebihan utama MobileNet 
@@ -33,22 +27,24 @@ adalah arsitekturnya yang ringan dan dapat diimplementasikan dengan cepat pada p
 menggunakan operasi konvolusi depthwise separable, MobileNet dapat memberikan keseimbangan yang baik antara akurasi klasifikasi
 dan kebutuhan komputasi yang rendah. Hal ini membuatnya sangat cocok untuk aplikasi real-time atau perangkat dengan keterbatasan 
 daya baterai.
-Classification report yang dihasilkan oleh EfficientNet untuk dataset ini.
-
-![Screenshot (683)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/91d6ec43-467f-4f6e-81c8-b611884c39c3)
-
-
 
 # Web Deployment
 Dalam tugas ini, web memanfaatkan Flask untuk menyajikan halaman web, menerima unggahan gambar, dan menggunakan model klasifikasi 
 gambar untuk membuat prediksi. 
 
 1. Tampilan halaman web untuk mengupload gambar.
-   
-![Screenshot (677)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/399bf375-615b-4c46-a2d1-54e63d9563a6)
 
+   ![Screenshot (691)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/1b0dd5fa-dcd7-4f3e-a6c6-c2af9f03a814)
    
 2. Tampilan halaman web untuk menampilkan hasil klasifikasi citra.
+   Hasil klasifikasi menggunakan ResNet.
    
-![Screenshot (678)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/32457171-1e38-485a-96bb-ef8dfd1cc4e4)
+   ![Screenshot (690)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/697cf313-a5e8-42ad-bb53-522f893f0828)
+
+   Hasil klasifikasi menggunakan MobileNet.
+
+   ![Screenshot (689)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/49f07f84-12f6-4ba4-8c0b-4468c1edb456)
+
+   
+
 
