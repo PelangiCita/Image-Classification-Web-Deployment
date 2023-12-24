@@ -37,6 +37,7 @@ gambar untuk membuat prediksi.
    ![Screenshot (691)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/1b0dd5fa-dcd7-4f3e-a6c6-c2af9f03a814)
    
 2. Tampilan halaman web untuk menampilkan hasil klasifikasi citra.
+  
    Hasil klasifikasi menggunakan ResNet.
    
    ![Screenshot (690)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/697cf313-a5e8-42ad-bb53-522f893f0828)
