@@ -45,7 +45,3 @@ gambar untuk membuat prediksi.
    Hasil klasifikasi menggunakan MobileNet.
 
    ![Screenshot (689)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/49f07f84-12f6-4ba4-8c0b-4468c1edb456)
-
-   
-
-
