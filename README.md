@@ -10,7 +10,7 @@ Dataset yang digunakan dapat diakses melalui link https://drive.google.com/file/
 
 ![download (2)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/c10cad5a-49dd-43a8-b421-b18656e60dff)
 
-Dataset telah melalui proses pre-processing, seperti augmentasi sebelum dilakukan fit model.
+Dataset telah melalui proses pre-processing, seperti augmentasi sebelum dilakukan fit model. 
 
 # Flask:
 Flask adalah kerangka kerja (framework) web mikro yang ditulis dalam bahasa pemrograman Python yang dirancang untuk 
@@ -47,14 +47,17 @@ gambar untuk membuat prediksi.
 
 1. Tampilan halaman web untuk mengupload gambar.
 
-   ![Screenshot (691)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/1b0dd5fa-dcd7-4f3e-a6c6-c2af9f03a814)
+   ![Screenshot (699)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/b2220512-42c6-4c5f-8568-5064c206dc19)
+
    
-2. Tampilan halaman web untuk menampilkan hasil klasifikasi citra.
+3. Tampilan halaman web untuk menampilkan hasil klasifikasi citra.
   
    Hasil klasifikasi menggunakan ResNet.
-   
-   ![Screenshot (690)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/697cf313-a5e8-42ad-bb53-522f893f0828)
+
+   ![Screenshot (700)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/d0c27896-d5b4-4226-97a3-8977c2959f85)
+
 
    Hasil klasifikasi menggunakan MobileNet.
 
-   ![Screenshot (689)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/49f07f84-12f6-4ba4-8c0b-4468c1edb456)
+   ![Screenshot (701)](https://github.com/PelangiCita/Image-Classification-Web-Deployment/assets/72428654/559d2229-790b-48bf-a775-c68caffe30d2)
+
