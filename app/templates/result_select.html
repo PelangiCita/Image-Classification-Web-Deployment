@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .contact-section {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title-box {
+            text-align: center;
+            padding: 20px;
+            background-color: #317520;
+            color: #fff;
+            border-bottom: 2px solid #4a9443;
+            border-radius: 10px 10px 0 0;
+
+        }
+
+        .sec-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .content-column {
+            width: 90%;
+            border-right: 2px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+        }
+
+        .inner-content {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .inner-content p {
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #myProgress {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        #myBar {
+            width: 0;
+            height: 30px;
+            background-color: #4CAF50;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .sidebar-column {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .sidebar-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sidebar-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-content button {
+            display: block;
+            padding: 15px;
+            background-color: #57b846;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar-content button:hover {
+            background-color: #4a9443;
+        }
+
+    </style>
+    <title>Your Website</title>
+</head>
+
+<body>
+    <section class="contact-section" id="result">
+        <div class="container">
+            <div class="title-box">
+                <div class="sec-title">Prediction Result</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12 content-column">
+                    <div class="inner-content">
+                        <div class="contact-form-area">
+                            <p>{{ model }} Model</p>
+                            <p>Predicted Label is: {{ labels[pred] }}</p>
+                            Accuracy: {{ (probs|max) }}% | Prediction Time: {{ (run_time) }} second
+                            <input type="hidden" id="probability" value={{(probs|max)}}>
+                            <div id="myProgress">
+                                <div id="myBar">0%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 sidebar-column">
+                    <div class="sidebar-content">
+                        <img src="{{ url_for('static', filename=img) }}" alt="" class="img-fluid">
+                        <a href="/"><button>Input New Image</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var accuracy = parseFloat("{{ (probs|max) }}");
+            var myBar = document.getElementById('myBar');
+            myBar.style.width = accuracy + '%';
+            myBar.textContent = accuracy + '%';
+            if (accuracy < 50) {
+                myBar.style.backgroundColor = '#c42f2f'; 
+            } else {
+                myBar.style.backgroundColor = '#4dc42f'; 
+            }
+        });
+    </script>
+</body>
+
+</html>
